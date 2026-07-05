@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node10",     // deprecated, will be ignored
+    "ignoreDeprecations": "6.0",      // <-- add this here
+    "types": ["node", "@playwright/test"],
+    "skipLibCheck": true
+  },
+  "include": [
+    "tests/**/*.ts",
+    "playwright.config.ts"
+  ]
+}
