@@ -20,7 +20,7 @@ const dialog = await dialogPromise
 await dialog.accept();
 })
 
-test.only('multiple alerts in one test with promise', async ({page}) =>{
+test('multiple alerts in one test with promise', async ({page}) =>{
 
 await page.goto('https://letcode.in/alert')
 

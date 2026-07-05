@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test.only("Iframe handle", async ({ page }) => {
+test("Iframe handle", async ({ page }) => {
   await page.goto("https://letcode.in/frame");
 
   const frame1 = page.frameLocator("#firstFr");

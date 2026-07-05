@@ -11,7 +11,7 @@ expect(fileName).toBe('file_example_XLS_10.xls');
 
 })
 
-test.only('Multiple Upload verification', async ({page}) => {
+test('Multiple Upload verification', async ({page}) => {
 await page.goto("https://letcode.in/file");
 await page.locator('input#resume').setInputFiles(['D:/Testdata/file_example_XLS_10.xls', 'D:/Testdata/file_example_XLS_50.xls'])
 const files = await page.locator('#resume').evaluate(
